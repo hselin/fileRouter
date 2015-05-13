@@ -1,0 +1,14 @@
+﻿Build started 1/21/2012 3:26:36 PM.
+     1>Project "C:\projects\fileRouter\fuse\fuse.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\fuse.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Debug\fuse.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       FinalizeBuildStatus:
+         Deleting file "Debug\fuse.unsuccessfulbuild".
+         Touching "Debug\fuse.lastbuildstate".
+     1>Done Building Project "C:\projects\fileRouter\fuse\fuse.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.14

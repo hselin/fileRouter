@@ -1,0 +1,893 @@
+#include <vector>
+
+//#include <fuse.h>
+#include <stdio.h>
+#include <string.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <stdio.h>
+
+#include "../common/Util.h"
+
+#include "TFSValueTypes.h"
+#include "TFSCore.h"
+#include "TFSWrapper.h"
+
+using namespace TFS;
+
+TFSCore::Ptr core = NULL;
+TFSIOInterface::Ptr ioInterface = NULL;
+
+int populateTFSDB();
+int queryTFSDB();
+
+int tfsInit()
+{
+    try
+    {
+        //create everything (config/status/io interface, blockmgr, log)
+        core = TFSCore::TFSCoreNew();
+
+        ioInterface = core->ioInterface();
+
+        //set to 1MB block size
+        //core->configInterface()->blockSizeShiftIs(20);
+
+        //set to 128KB block size
+        core->configInterface()->blockSizeShiftIs(17);
+
+        core->configInterface()->localFileSystemBlockStoreNew("moo", "./cache/");
+        
+        //core->configInterface()->cacheLocationIs(ResourceLocation("./cache/"));
+
+        populateTFSDB();
+        queryTFSDB();
+    } 
+    catch (...)
+    {
+        return 0;
+    }
+
+    return 0;
+}
+
+int populateTFSDB()
+{
+    DBG_ASSERT(ioInterface.ptr());
+
+    TFSRegularFileObject::Ptr fileObj = NULL;
+    TFSDirectoryObject::Ptr dirObj = NULL;
+    ObjectPermission permission = ObjectPermission(1000, 1000, 0xFFFF & 0x1FF);
+
+    dirObj = ioInterface->directoryObjectNew(ObjectPath("/"), permission);
+    ioInterface->rootDirectoryObjectAdd(ObjectPath("/"), dirObj);
+
+    fileObj = ioInterface->regularFileObjectNew(ObjectPath("/file1.txt"), permission);
+    ioInterface->regularFileObjectAdd(ObjectPath("/file1.txt"), fileObj);
+
+    fileObj = ioInterface->regularFileObjectNew(ObjectPath("/file2.txt"), permission);
+    ioInterface->regularFileObjectAdd(ObjectPath("/file2.txt"), fileObj);
+
+    dirObj = ioInterface->directoryObjectNew(ObjectPath("/dir1"), permission);
+    ioInterface->directoryObjectAdd(ObjectPath("/dir1"), dirObj);
+
+    return 0;
+}
+
+int queryTFSDB()
+{
+    DBG_ASSERT(ioInterface.ptr());
+
+    TFSRegularFileObject::Ptr fileObj = NULL;
+    TFSDirectoryObject::Ptr rootDirObj = NULL;
+    TFSDirectoryObject::Ptr dirObj = NULL;
+
+    rootDirObj = ioInterface->directoryObject(ObjectPath());
+    dirObj = ioInterface->directoryObject(ObjectPath("/dir1"));
+
+    fileObj = ioInterface->regularFileObject(ObjectPath("/file1.txt"));
+
+    printf("%llu\n", rootDirObj->entries());
+
+    return 0;
+}
+
+int tfswrapper_getattr(const char *rawPath, struct stat *stbuf)
+{
+    /*
+    Get file attributes.
+
+    Similar to stat(). The 'st_dev' and 'st_blksize' fields are ignored. The 'st_ino' field is ignored except if the 'use_ino' mount option is given. 
+    */
+
+    if((rawPath == NULL) || (stbuf == NULL))
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_getattr - rawPath || stbuf is null");
+        return -ENOENT;
+    }
+
+    //core->log()->entryNew(Fwk::Log::info(), "tfswrapper_getattr - %s", rawPath);
+
+    try
+    {        
+        ObjectPath path(rawPath);
+        TFSObject::Ptr tfsObj = NULL;
+
+        tfsObj = ioInterface->directoryObject(path);
+
+        if(tfsObj.ptr() == NULL)
+        {
+            tfsObj = ioInterface->regularFileObject(path);
+        }
+
+        if(tfsObj.ptr() == NULL)
+            return -ENOENT;
+
+        memset(stbuf, 0, sizeof(struct stat));
+
+        if(tfsObj->type().regularFile())
+        {
+            stbuf->st_mode = S_IFREG;
+            stbuf->st_nlink = 1;
+            stbuf->st_size = tfsObj->size().value();
+        }
+
+        if(tfsObj->type().directory())
+        {
+            stbuf->st_mode = S_IFDIR;
+            stbuf->st_nlink = 2;
+        }
+
+        //core->log()->entryNew(Fwk::Log::info(), "tfswrapper_getattr - unix permission 0x%x", tfsObj->permission().unixPermission());
+
+        stbuf->st_mode |= (mode_t) (tfsObj->permission().unixPermission());        
+
+        stbuf->st_uid = tfsObj->permission().uid();
+        stbuf->st_gid = tfsObj->permission().gid();
+
+        return 0;
+    }
+    catch (Fwk::Exception &e)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_getattr - exception %s", e.what());
+        return -ENOENT;
+    }
+    catch (...)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_getattr - general exception");
+        return -ENOENT;
+    }
+
+    return -ENOENT;
+} //tfswrapper_getattr
+
+
+//readlink
+//mknod
+
+int tfswrapper_mkdir(const char *rawPath, mode_t rawMode)
+{
+    /** Create a directory 
+    *
+    * Note that the mode argument may not have the type specification
+    * bits set, i.e. S_ISDIR(mode) can be false.  To obtain the
+    * correct directory type bits use  mode|S_IFDIR
+    * */
+    
+    if(rawPath == NULL)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_mkdir - rawPath is null");
+        return -ENOENT;
+    }
+
+    mode_t mode = rawMode|S_IFDIR;
+
+    core->log()->entryNew(Fwk::Log::info(), "tfswrapper_mkdir - %s 0x%x", rawPath, mode);
+    
+    try
+    {
+        struct fuse_context *fuseContext = NULL;
+        fuseContext = fuse_get_context();
+
+        if(fuseContext == NULL)
+        {
+            return -ENOENT;
+        }
+
+        ObjectPermission permission(fuseContext->uid, fuseContext->gid, 0);
+
+        permission.unixPermissionIs(mode);
+
+
+        ObjectPath path(rawPath);
+        TFSDirectoryObject::Ptr dirObj = NULL;
+
+        dirObj = ioInterface->directoryObjectNew(path, permission);
+        ioInterface->directoryObjectAdd(path, dirObj);
+
+        return 0;
+    }
+    catch (Fwk::Exception &e)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_mkdir - exception %s", e.what());
+        return -ENOENT;
+    }
+    catch (...)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_mkdir - general exception");
+        return -ENOENT;
+    }
+
+    return -ENOENT;
+} //tfswrapper_mkdir
+
+int tfswrapper_unlink(const char *rawPath)
+{
+    /** Remove a file */
+
+    if(rawPath == NULL)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_unlink - rawPath is null");
+        return -ENOENT;
+    }
+
+    core->log()->entryNew(Fwk::Log::info(), "tfswrapper_unlink - %s", rawPath);
+    
+    try
+    {
+        ObjectPath path(rawPath);
+
+        ioInterface->directoryObjectDel(path);
+        return 0;
+    }
+    catch (Fwk::Exception &e)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_unlink - exception %s", e.what());
+        return -ENOENT;
+    }
+    catch (...)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_unlink - general exception");
+        return -ENOENT;
+    }
+
+    return -ENOENT;
+} //tfswrapper_unlink
+
+
+int tfswrapper_rmdir(const char *rawPath)
+{
+    /** Remove a directory */
+
+    if(rawPath == NULL)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_rmdir - rawPath is null");
+        return -ENOENT;
+    }
+
+    core->log()->entryNew(Fwk::Log::info(), "tfswrapper_rmdir - %s", rawPath);
+    
+    try
+    {
+        ObjectPath path(rawPath);
+
+        ioInterface->regularFileObjectDel(path);
+        return 0;
+    }
+    catch (Fwk::Exception &e)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_rmdir - exception %s", e.what());
+        return -ENOENT;
+    }
+    catch (...)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_rmdir - general exception");
+        return -ENOENT;
+    }
+
+    return -ENOENT;
+}
+
+//symlink
+//rename
+//link
+//chmod
+//chown
+	
+int tfswrapper_truncate(const char *rawPath, off_t length)
+{
+    /** Change the size of a file */
+
+    if(rawPath == NULL)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_truncate - rawPath is null");
+        return -ENOENT;
+    }
+
+    core->log()->entryNew(Fwk::Log::info(), "tfswrapper_truncate - %s 0x%x", rawPath, length);
+
+
+    return 0;
+}
+
+
+int tfswrapper_open(const char *rawPath, struct fuse_file_info *fi)
+{
+    /** File open operation
+	*
+	* No creation (O_CREAT, O_EXCL) and by default also no
+	* truncation (O_TRUNC) flags will be passed to open(). If an
+	* application specifies O_TRUNC, fuse first calls truncate()
+	* and then open(). Only if 'atomic_o_trunc' has been
+	* specified and kernel version is 2.6.24 or later, O_TRUNC is
+	* passed on to open.
+	*
+	* Unless the 'default_permissions' mount option is given,
+	* open should check if the operation is permitted for the
+	* given flags. Optionally open may also return an arbitrary
+	* filehandle in the fuse_file_info structure, which will be
+	* passed to all file operations.
+	*
+	* Changed in version 2.2
+	*/
+
+    /*
+    O_CREAT
+    O_NOCTTY
+    O_TRUNC
+    O_APPEND
+    O_NONBLOCK or O_NDELAY
+    O_SYNC
+    O_NOFOLLOW
+    O_DIRECTORY
+    O_DIRECT
+    O_ASYNC
+    */
+
+    if((rawPath == NULL) || (fi == NULL))
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_open - rawPath || fi is null");
+        return -ENOENT;
+    }
+
+    core->log()->entryNew(Fwk::Log::info(), "tfswrapper_open - %s", rawPath);
+
+    try
+    {
+        struct fuse_context *fuseContext = NULL;
+        fuseContext = fuse_get_context();
+
+        if(fuseContext == NULL)
+        {
+            return -ENOENT;
+        }
+
+        ProcessInfo process(fuseContext->uid, fuseContext->gid, fuseContext->pid);
+
+        OpenFlag flag;
+
+        if(fi->flags & O_APPEND)
+        {
+            flag.add(OpenFlag::flagAppend());
+        }
+
+
+        ObjectPath path(rawPath);
+        TFSRegularFileObject::Ptr fileObj = NULL;
+        TFSHandle::Ptr handle = NULL;
+
+        fileObj = ioInterface->regularFileObject(path);
+
+        if(fileObj.ptr() == NULL)
+        {
+            return -ENOENT;
+        }        
+
+        //generate file handle
+        handle = ioInterface->handleNew(path, fileObj, process, flag);
+
+        if(handle.ptr() == NULL)
+        {
+            core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_open - handleNew returned null");
+            return -ENOENT;
+        }
+
+        //set file handle
+        fi->fh = handle->id().value();
+
+        core->log()->entryNew(Fwk::Log::info(), "tfswrapper_open - created handle id 0x%llx for %s", fi->fh, rawPath);
+
+        return 0;
+    }
+    catch (Fwk::Exception &e)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_open - exception %s", e.what());
+        return -ENOENT;
+    }
+    catch (...)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_open - general exception");
+        return -ENOENT;
+    }
+
+    return -ENOENT;
+} //tfswrapper_open
+
+
+int tfswrapper_read(const char *rawPath, char *buf, size_t size, off_t offset, struct fuse_file_info *fi)
+{
+    /** Read data from an open file
+    *
+    * Read should return exactly the number of bytes requested except
+    * on EOF or error, otherwise the rest of the data will be
+    * substituted with zeroes.	 An exception to this is when the
+    * 'direct_io' mount option is specified, in which case the return
+    * value of the read system call will reflect the return value of
+    * this operation.
+    *
+    * Changed in version 2.2
+    */
+
+    if((buf == NULL) || (fi == NULL))
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_read - buf || fi is null");
+        return -ENOENT;
+    }
+
+    if(rawPath)
+    {
+        core->log()->entryNew(Fwk::Log::info(), "tfswrapper_read - %s offset 0x%llx length %lu", rawPath, offset, size);
+    }
+    
+    core->log()->entryNew(Fwk::Log::info(), "tfswrapper_read - 0x%llx offset 0x%llx length %lu", fi->fh, offset, size);
+
+
+    if(size == 0)
+    {
+        //core->log()->entryNew(Fwk::Log::info(), "tfswrapper_read - read size == 0");
+        return 0;
+    }
+
+    try
+    {
+        HandleID hid(fi->fh);
+
+        return ioInterface->readNew(hid, (U8 *)buf, (U64)offset, (U64)size);
+    }
+    catch (Fwk::Exception &e)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_read - exception %s", e.what());
+        return -ENOENT;
+    }
+    catch (...)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_read - general exception");
+        return -ENOENT;
+    }
+
+    return -ENOENT;
+} //tfswrapper_read
+
+int tfswrapper_write(const char *rawPath, const char *buf, size_t size, off_t offset, struct fuse_file_info *fi)
+{
+    /** Write data to an open file
+    *
+    * Write should return exactly the number of bytes requested
+    * except on error.	 An exception to this is when the 'direct_io'
+    * mount option is specified (see read operation).
+    *
+    * Changed in version 2.2
+    */
+
+    if((buf == NULL) || (fi == NULL))
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_write - buf || fi is null");
+        return -ENOENT;
+    }
+
+    //core->log()->entryNew(Fwk::Log::info(), "test %d %d %d", 1, 2, 3);
+
+    if(rawPath)
+    {
+        core->log()->entryNew(Fwk::Log::info(), "tfswrapper_write - %s offset 0x%llx length %lu", rawPath, offset, size);
+    }
+    
+    core->log()->entryNew(Fwk::Log::info(), "tfswrapper_write - 0x%llx offset 0x%llx length %lu", fi->fh, offset, size);
+
+    if(size == 0)
+    {
+        //core->log()->entryNew(Fwk::Log::info(), "tfswrapper_write - write size == 0");
+        return 0;
+    }
+
+    try
+    {
+        HandleID hid(fi->fh);
+
+        return ioInterface->writeNew(hid, (U8 *)buf, (U64)offset, (U64)size);
+    }
+    catch (Fwk::Exception &e)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_write - exception %s", e.what());
+        return -ENOENT;
+    }
+    catch (...)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_write - general exception");
+        return -ENOENT;
+    }
+
+    return -ENOENT;
+} //tfswrapper_write
+
+
+
+
+//statfs
+//flush
+
+
+int tfswrapper_release(const char *rawPath, struct fuse_file_info *fi)
+{
+    /** Release an open file
+    *
+    * Release is called when there are no more references to an open
+    * file: all file descriptors are closed and all memory mappings
+    * are unmapped.
+    *
+    * For every open() call there will be exactly one release() call
+    * with the same flags and file descriptor.	 It is possible to
+    * have a file opened more than once, in which case only the last
+    * release will mean, that no more reads/writes will happen on the
+    * file.  The return value of release is ignored.
+    *
+    * Changed in version 2.2
+    */
+
+    if((rawPath == NULL) || (fi == NULL))
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_release - rawPath || fi is null");
+        return -ENOENT;
+    }
+
+    core->log()->entryNew(Fwk::Log::info(), "tfswrapper_release - %s 0x%llx", rawPath, fi->fh);
+
+    try
+    {
+        HandleID hid(fi->fh);
+        ioInterface->handleDel(hid);
+
+        DBG_ASSERT(ioInterface->handle(hid).ptr() == NULL);
+    }
+    catch (Fwk::Exception &e)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_release - exception %s", e.what());
+        return -ENOENT;
+    }
+    catch (...)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_release - general exception");
+        return -ENOENT;
+    }
+
+    return -ENOENT;
+} //tfswrapper_release
+
+
+
+//fsync
+//setxattr
+//getxattr
+//listattr
+//removeattr
+
+
+
+int tfswrapper_opendir(const char *rawPath, struct fuse_file_info *fi)
+{
+    /** Open directory
+    *
+    * Unless the 'default_permissions' mount option is given,
+    * this method should check if opendir is permitted for this
+    * directory. Optionally opendir may also return an arbitrary
+    * filehandle in the fuse_file_info structure, which will be
+    * passed to readdir, closedir and fsyncdir.
+    *
+    * Introduced in version 2.3
+    */
+
+    if((rawPath == NULL) || (fi == NULL))
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_opendir - rawPath || fi is null");
+        return -ENOENT;
+    }
+
+    core->log()->entryNew(Fwk::Log::info(), "tfswrapper_opendir - %s", rawPath);
+
+    try
+    {
+        struct fuse_context *fuseContext = NULL;
+        fuseContext = fuse_get_context();
+
+        if(fuseContext == NULL)
+        {
+            return -ENOENT;
+        }
+
+        ProcessInfo process(fuseContext->uid, fuseContext->gid, fuseContext->pid);
+
+        OpenFlag flag;
+
+        if(fi->flags & O_APPEND)
+        {
+            flag.add(OpenFlag::flagAppend());
+        }
+
+        ObjectPath path(rawPath);
+        TFSDirectoryObject::Ptr dirObj = NULL;
+        TFSHandle::Ptr handle = NULL;
+
+        dirObj = ioInterface->directoryObject(path);
+
+        if(dirObj.ptr() == NULL)
+        {
+            return -ENOENT;
+        }
+
+        //generate file handle
+        handle = ioInterface->handleNew(path, dirObj, process, flag);
+
+        if(handle.ptr() == NULL)
+        {
+            core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_opendir - handleNew returned null");
+            return -ENOENT;
+        }
+
+        //set file handle
+        fi->fh = handle->id().value();
+
+        core->log()->entryNew(Fwk::Log::info(), "tfswrapper_opendir - created handle id 0x%llx for %s", fi->fh, rawPath);
+
+        return 0;
+    }
+    catch (Fwk::Exception &e)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_opendir - exception %s", e.what());
+        return -ENOENT;
+    }
+    catch (...)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_opendir - general exception");
+        return -ENOENT;
+    }
+
+    return -ENOENT;
+} //tfswrapper_opendir
+
+
+int tfswrapper_readdir(const char *rawPath, void *buf, fuse_fill_dir_t filler, off_t offset, struct fuse_file_info *fi)
+{   
+    /** Read directory
+    *
+    * This supersedes the old getdir() interface.  New applications
+    * should use this.
+    *
+    * The filesystem may choose between two modes of operation:
+    *
+    * 1) The readdir implementation ignores the offset parameter, and
+    * passes zero to the filler function's offset.  The filler
+    * function will not return '1' (unless an error happens), so the
+    * whole directory is read in a single readdir operation.  This
+    * works just like the old getdir() method.
+    *
+    * 2) The readdir implementation keeps track of the offsets of the
+    * directory entries.  It uses the offset parameter and always
+    * passes non-zero offset to the filler function.  When the buffer
+    * is full (or an error happens) the filler function will return
+    * '1'.
+    *
+    * Introduced in version 2.3
+    */
+
+    if((buf == NULL) || (filler == NULL) || (fi == NULL))
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_readdir - buf || filler || fi is null");
+        return -ENOENT;
+    }
+
+    if(rawPath)
+    {
+        core->log()->entryNew(Fwk::Log::info(), "tfswrapper_readdir - %s", rawPath);
+    }
+    
+    core->log()->entryNew(Fwk::Log::info(), "tfswrapper_readdir - 0x%llx", fi->fh);
+
+
+    try
+    {
+        int status = 0;
+        TFSHandle::Ptr handle = NULL;
+        TFSDirectoryObject::Ptr dirObj = NULL;
+
+        HandleID hid(fi->fh);
+
+        handle = ioInterface->handle(hid);
+
+        if(handle.ptr() == NULL)
+        {
+            core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_readdir - cannot find handle");
+            return -EBADF; //fd is not a valid file descriptor or is not open for writing. 
+        }        
+
+        //dirObj = dynamic_cast<TFSDirectoryObject *> handle->object().ptr();
+
+        dirObj = Fwk::ptr_cast<TFSDirectoryObject, TFSObject>(handle->object());
+
+        if(dirObj.ptr() == NULL)
+        {
+            core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_readdir - cannot find object associated with handle");
+            return -EINVAL; //fd is attached to an object which is unsuitable for writing. 
+        }
+
+        //default current and parent directory entries
+        {
+            //should also check for return value
+            filler(buf, ".", NULL, 0);
+            filler(buf, "..", NULL, 0);
+        }
+
+        vector<ObjectPathComponent> entries = dirObj->entry();
+        vector<ObjectPathComponent>::const_iterator it;
+
+        for(it = entries.begin(); it < entries.end(); it++)
+        {
+            status = filler(buf, it->componentString().c_str(), NULL, 0);
+            DBG_ASSERT(status == 0);
+
+            if(status != 0)
+            {
+                core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_readdir - filler return != 0");
+                return -ENOENT;;
+            }
+        }
+
+        return 0;
+    }
+    catch (Fwk::Exception &e)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_readdir - exception %s", e.what());
+        return -ENOENT;
+    }
+    catch (...)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_readdir - general exception");
+        return -ENOENT;
+    }
+
+    return -ENOENT;
+} //tfswrapper_readdir
+
+//releasedir
+//fsyncdir
+//init
+//destroy
+//access
+
+int tfswrapper_create(const char *rawPath, mode_t mode, struct fuse_file_info *fi)
+{
+    /**
+    * Create and open a file
+    *
+    * If the file does not exist, first create it with the specified
+    * mode, and then open it.
+    *
+    * If this method is not implemented or under Linux kernel
+    * versions earlier than 2.6.15, the mknod() and open() methods
+    * will be called instead.
+    *
+    * Introduced in version 2.5
+    */
+
+    if((rawPath == NULL) || (fi == NULL))
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_create - rawPath || fi is null");
+        return -ENOENT;
+    }
+
+    core->log()->entryNew(Fwk::Log::info(), "tfswrapper_create - %s 0x%x", rawPath, mode);
+    
+    if(!S_ISREG(mode))
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_create - mode & S_IFREG");
+        return -ENOENT;
+    }
+
+    try
+    {
+        int openStatus = 0;
+        struct fuse_context *fuseContext = NULL;
+        fuseContext = fuse_get_context();
+
+        if(fuseContext == NULL)
+        {
+            return -ENOENT;
+        }
+
+        ObjectPermission permission(fuseContext->uid, fuseContext->gid, 0);
+
+        permission.unixPermissionIs(mode);
+
+        core->log()->entryNew(Fwk::Log::info(), "tfswrapper_create - unix permission 0x%x", permission.unixPermission());
+
+        ObjectPath path(rawPath);
+        TFSRegularFileObject::Ptr fileObj = NULL;
+
+        fileObj = ioInterface->regularFileObjectNew(path, permission);
+        ioInterface->regularFileObjectAdd(path, fileObj);
+
+        core->log()->entryNew(Fwk::Log::info(), "tfswrapper_create - new obj unix permission 0x%x", fileObj->permission().unixPermission());
+
+        openStatus = tfswrapper_open(rawPath, fi);
+
+        return openStatus;
+    }
+    catch (Fwk::Exception &e)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_create - exception %s", e.what());
+        return -ENOENT;
+    }
+    catch (...)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_create - general exception");
+        return -ENOENT;
+    }
+
+    return -ENOENT;
+} //tfswrapper_create
+
+int tfswrapper_ftruncate(const char *rawPath, off_t length, struct fuse_file_info *fi)
+{
+    /**
+    * Change the size of an open file
+    *
+    * This method is called instead of the truncate() method if the
+    * truncation was invoked from an ftruncate() system call.
+    *
+    * If this method is not implemented or under Linux kernel
+    * versions earlier than 2.6.15, the truncate() method will be
+    * called instead.
+    *
+    * Introduced in version 2.5
+    */
+
+
+    if(fi == NULL)
+    {
+        core->log()->entryNew(Fwk::Log::warning(), "tfswrapper_ftruncate - fi is null");
+        return -ENOENT;
+    }
+
+    if(rawPath)
+    {
+        core->log()->entryNew(Fwk::Log::info(), "tfswrapper_ftruncate - %s 0x%x", rawPath, length);
+    }
+    
+    core->log()->entryNew(Fwk::Log::info(), "tfswrapper_ftruncate - 0x%llx 0x%x", fi->fh, length);
+
+    return 0;
+}
+
+//fgetattr
+//lock
+//utimens
+//bmap
+
+
+/**
+* Flag indicating, that the filesystem can accept a NULL path
+* as the first argument for the following operations:
+*
+* read, write, flush, release, fsync, readdir, releasedir,
+* fsyncdir, ftruncate, fgetattr and lock
+*/
+//unsigned int flag_nullpath_ok : 1;

@@ -1,0 +1,238 @@
+time | INFO TFSIOInterface::rootDirectoryObjectAdd - /
+time | INFO TFSIOInterface::regularFileObjectAdd - /file1.txt
+time | INFO TFSIOInterface::regularFileObjectAdd - [/] [file1.txt]
+time | INFO TFSIOInterface::regularFileObjectAdd - /file2.txt
+time | INFO TFSIOInterface::regularFileObjectAdd - [/] [file2.txt]
+time | INFO TFSIOInterface::directoryObjectAdd - /dir1
+time | INFO TFSIOInterface::directoryObjectAdd - [/] [dir1]
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x0 for /
+time | INFO tfswrapper_readdir - /
+time | INFO tfswrapper_readdir - 0x0
+time | INFO tfswrapper_open - /file1.txt
+time | INFO tfswrapper_open - created handle id 0x1 for /file1.txt
+time | INFO tfswrapper_read - /file1.txt offset 0x0 length 4096
+time | INFO tfswrapper_read - 0x1 offset 0x0 length 4096
+time | INFO TFSIOInterface::read - offset 0x0 length 0x1000
+time | INFO tfswrapper_create - /file3.txt 0x81a4
+time | INFO tfswrapper_create - unix permission 0x81a4
+time | INFO TFSIOInterface::regularFileObjectAdd - /file3.txt
+time | INFO TFSIOInterface::regularFileObjectAdd - [/] [file3.txt]
+time | INFO tfswrapper_create - new obj unix permission 0x81a4
+time | INFO tfswrapper_open - /file3.txt
+time | INFO tfswrapper_open - created handle id 0x2 for /file3.txt
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x3 for /
+time | INFO tfswrapper_readdir - /
+time | INFO tfswrapper_readdir - 0x3
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x4 for /
+time | INFO tfswrapper_readdir - /
+time | INFO tfswrapper_readdir - 0x4
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x5 for /
+time | INFO tfswrapper_readdir - /
+time | INFO tfswrapper_readdir - 0x5
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x6 for /
+time | INFO tfswrapper_readdir - /
+time | INFO tfswrapper_readdir - 0x6
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x7 for /
+time | INFO tfswrapper_readdir - /
+time | INFO tfswrapper_readdir - 0x7
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x8 for /
+time | INFO tfswrapper_readdir - /
+time | INFO tfswrapper_readdir - 0x8
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x9 for /
+time | INFO tfswrapper_readdir - /
+time | INFO tfswrapper_readdir - 0x9
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0xa for /
+time | INFO tfswrapper_readdir - /
+time | INFO tfswrapper_readdir - 0xa
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0xb for /
+time | INFO tfswrapper_readdir - /
+time | INFO tfswrapper_readdir - 0xb
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0xc for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0xd for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0xe for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0xf for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x10 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x11 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x12 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x13 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x14 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x15 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x16 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x17 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x18 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x19 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x1a for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x1b for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x1c for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x1d for /
+time | INFO tfswrapper_open - /file3.txt
+time | INFO tfswrapper_open - created handle id 0x1e for /file3.txt
+time | INFO tfswrapper_create - /.file3.txt.swp 0x8180
+time | INFO tfswrapper_create - unix permission 0x8180
+time | INFO TFSIOInterface::regularFileObjectAdd - /.file3.txt.swp
+time | INFO TFSIOInterface::regularFileObjectAdd - [/] [.file3.txt.swp]
+time | INFO tfswrapper_create - new obj unix permission 0x8180
+time | INFO tfswrapper_open - /.file3.txt.swp
+time | INFO tfswrapper_open - created handle id 0x1f for /.file3.txt.swp
+time | INFO tfswrapper_create - /.file3.txt.swx 0x8180
+time | INFO tfswrapper_create - unix permission 0x8180
+time | INFO TFSIOInterface::regularFileObjectAdd - /.file3.txt.swx
+time | INFO TFSIOInterface::regularFileObjectAdd - [/] [.file3.txt.swx]
+time | INFO tfswrapper_create - new obj unix permission 0x8180
+time | INFO tfswrapper_open - /.file3.txt.swx
+time | INFO tfswrapper_open - created handle id 0x20 for /.file3.txt.swx
+time | INFO tfswrapper_create - /file3_tx.swp 0x8180
+time | INFO tfswrapper_create - unix permission 0x8180
+time | INFO TFSIOInterface::regularFileObjectAdd - /file3_tx.swp
+time | INFO TFSIOInterface::regularFileObjectAdd - [/] [file3_tx.swp]
+time | INFO tfswrapper_create - new obj unix permission 0x8180
+time | INFO tfswrapper_open - /file3_tx.swp
+time | INFO tfswrapper_open - created handle id 0x21 for /file3_tx.swp
+time | INFO tfswrapper_write - /file3_tx.swp offset 0x0 length 4096
+time | INFO tfswrapper_write - 0x21 offset 0x0 length 4096
+time | INFO TFSIOInterface::write - offset 0x0 length 0x1000
+time | WARNING TFSBlockManager::blockNew - cannot store block ©d1F$=^nIÿ$ê]!∂'!ªM^ó√Ú¡Sﬁ
+time | WARNING TFSRegularFileObject::writeBlock - block write failed 0x0
+time | WARNING TFSRegularFileObject::writeNew - writeBlock(0x0)
+time | INFO TFSRegularFileObject::handleWriteIO - file size: 4096
+time | INFO tfswrapper_open - /file3.txt
+time | INFO tfswrapper_open - created handle id 0x22 for /file3.txt
+time | INFO tfswrapper_read - /file3.txt offset 0x0 length 4096
+time | INFO tfswrapper_read - 0x22 offset 0x0 length 4096
+time | INFO TFSIOInterface::read - offset 0x0 length 0x1000
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x23 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x24 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x25 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x26 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x27 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x28 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x29 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x2a for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x2b for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x2c for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x2d for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x2e for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x2f for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x30 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x31 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x32 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x33 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x34 for /
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x35 for /
+time | INFO tfswrapper_open - /file3.txt
+time | INFO tfswrapper_open - created handle id 0x36 for /file3.txt
+time | INFO tfswrapper_open - /.file3.txt.swp
+time | INFO tfswrapper_open - created handle id 0x37 for /.file3.txt.swp
+time | INFO tfswrapper_open - /.file3.txt.swx
+time | INFO tfswrapper_open - created handle id 0x38 for /.file3.txt.swx
+time | INFO tfswrapper_open - /file3_tx.swp
+time | INFO tfswrapper_open - created handle id 0x39 for /file3_tx.swp
+time | INFO tfswrapper_read - /file3_tx.swp offset 0x0 length 4096
+time | INFO tfswrapper_read - 0x39 offset 0x0 length 4096
+time | INFO TFSIOInterface::read - offset 0x0 length 0x1000
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x3a for /
+time | INFO tfswrapper_create - /file3_tx.swo 0x8180
+time | INFO tfswrapper_create - unix permission 0x8180
+time | INFO TFSIOInterface::regularFileObjectAdd - /file3_tx.swo
+time | INFO TFSIOInterface::regularFileObjectAdd - [/] [file3_tx.swo]
+time | INFO tfswrapper_create - new obj unix permission 0x8180
+time | INFO tfswrapper_open - /file3_tx.swo
+time | INFO tfswrapper_open - created handle id 0x3b for /file3_tx.swo
+time | INFO tfswrapper_write - /file3_tx.swo offset 0x0 length 4096
+time | INFO tfswrapper_write - 0x3b offset 0x0 length 4096
+time | INFO TFSIOInterface::write - offset 0x0 length 0x1000
+time | WARNING TFSBlockManager::blockNew - cannot store block !≠0C≤√ê'e¿Û8‚°œ†u'£h>p¬`K•Ò
+time | WARNING TFSRegularFileObject::writeBlock - block write failed 0x0
+time | WARNING TFSRegularFileObject::writeNew - writeBlock(0x0)
+time | INFO TFSRegularFileObject::handleWriteIO - file size: 4096
+time | INFO tfswrapper_open - /file3.txt
+time | INFO tfswrapper_open - created handle id 0x3c for /file3.txt
+time | INFO tfswrapper_read - /file3.txt offset 0x0 length 4096
+time | INFO tfswrapper_read - 0x3c offset 0x0 length 4096
+time | INFO TFSIOInterface::read - offset 0x0 length 0x1000
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x3d for /
+time | INFO tfswrapper_create - /4913 0x81a4
+time | INFO tfswrapper_create - unix permission 0x81a4
+time | INFO TFSIOInterface::regularFileObjectAdd - /4913
+time | INFO TFSIOInterface::regularFileObjectAdd - [/] [4913]
+time | INFO tfswrapper_create - new obj unix permission 0x81a4
+time | INFO tfswrapper_open - /4913
+time | INFO tfswrapper_open - created handle id 0x3e for /4913
+time | INFO tfswrapper_open - /file3.txt
+time | INFO tfswrapper_open - created handle id 0x3f for /file3.txt
+time | INFO tfswrapper_create - /file3.tx~ 0x81a4
+time | INFO tfswrapper_create - unix permission 0x81a4
+time | INFO TFSIOInterface::regularFileObjectAdd - /file3.tx~
+time | INFO TFSIOInterface::regularFileObjectAdd - [/] [file3.tx~]
+time | INFO tfswrapper_create - new obj unix permission 0x81a4
+time | INFO tfswrapper_open - /file3.tx~
+time | INFO tfswrapper_open - created handle id 0x40 for /file3.tx~
+time | INFO tfswrapper_read - /file3.txt offset 0x0 length 4096
+time | INFO tfswrapper_read - 0x3f offset 0x0 length 4096
+time | INFO TFSIOInterface::read - offset 0x0 length 0x1000
+time | INFO tfswrapper_open - /file3.txt
+time | INFO tfswrapper_open - created handle id 0x41 for /file3.txt
+time | INFO tfswrapper_truncate - /file3.txt 0x0
+time | INFO tfswrapper_write - /file3.txt offset 0x0 length 4
+time | INFO tfswrapper_write - 0x41 offset 0x0 length 4
+time | INFO TFSIOInterface::write - offset 0x0 length 0x4
+time | WARNING TFSBlockManager::blockNew - cannot store block Èü{Ô
+›Cï@å‘ÔJ«ˇâJT(.öL&µÃêÀ
+time | WARNING TFSRegularFileObject::writeBlock - block write failed 0x0
+time | WARNING TFSRegularFileObject::writeNew - writeBlock(0x0)
+time | INFO TFSRegularFileObject::handleWriteIO - file size: 4
+time | INFO tfswrapper_open - /file3.tx~
+time | INFO tfswrapper_open - created handle id 0x42 for /file3.tx~
+time | INFO tfswrapper_opendir - /
+time | INFO tfswrapper_opendir - created handle id 0x43 for /
+time | INFO tfswrapper_readdir - /
+time | INFO tfswrapper_readdir - 0x43

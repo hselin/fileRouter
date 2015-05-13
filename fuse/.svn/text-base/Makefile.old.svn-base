@@ -1,0 +1,21 @@
+CC=gcc
+CFLAGS=-g -Wall -D_FILE_OFFSET_BITS=64 -c
+CFLAGS2=-g `pkg-config fuse --libs` -D_FILE_OFFSET_BITS=64 -o
+LDFLAGS=
+SOURCES=fuseInterface.c
+OBJECTS=$(SOURCES:.c=.o)
+ARFLAGS=rcs
+OUTPUT=tfs
+ARC=ar
+
+all: $(SOURCES) $(OUTPUT)
+	
+$(OUTPUT): $(OBJECTS) 
+	$(CC) $(CFLAGS2) $(OUTPUT) $(OBJECTS) ../release/common.a ../release/tfs.a
+
+.c.o:
+	$(CC) $(CFLAGS) $< -o $@
+
+clean:
+	rm -f $(OBJECTS)
+	rm -f $(OUTPUT)

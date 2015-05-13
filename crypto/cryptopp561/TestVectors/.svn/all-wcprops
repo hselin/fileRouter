@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors
+END
+whrlpool.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/whrlpool.txt
+END
+ttmac.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/ttmac.txt
+END
+all.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/all.txt
+END
+hmac.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/hmac.txt
+END
+sha.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/sha.txt
+END
+shacal2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/shacal2.txt
+END
+vmac.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/vmac.txt
+END
+panama.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/panama.txt
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/Readme.txt
+END
+ccm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/ccm.txt
+END
+mars.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/mars.txt
+END
+salsa.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/salsa.txt
+END
+cmac.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/cmac.txt
+END
+sosemanuk.txt
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/sosemanuk.txt
+END
+esign.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/esign.txt
+END
+gcm.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/gcm.txt
+END
+camellia.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/camellia.txt
+END
+dsa.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/dsa.txt
+END
+aes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/aes.txt
+END
+tea.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/tea.txt
+END
+rsa_pss.txt
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/rsa_pss.txt
+END
+eax.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/eax.txt
+END
+nr.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/nr.txt
+END
+seed.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/seed.txt
+END
+dsa_1363.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/dsa_1363.txt
+END
+seal.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/seal.txt
+END
+wake.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/wake.txt
+END
+rw.txt
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/rw.txt
+END
+rsa_oaep.txt
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/rsa_oaep.txt
+END
+rsa_pkcs1_1_5.txt
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/rsa_pkcs1_1_5.txt
+END
+dlies.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestVectors/dlies.txt
+END

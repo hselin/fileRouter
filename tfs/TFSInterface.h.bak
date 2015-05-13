@@ -1,0 +1,124 @@
+#ifndef TFS_INTERFACE_H
+#define TFS_INTERFACE_H
+
+#include <string>
+
+
+#include "../common/Ptr.h"
+#include "../common/PtrInterface.h"
+
+#include "TFSObject.h"
+#include "TFSHandle.h"
+
+
+
+namespace TFS
+{
+
+using namespace std;
+
+class TFSCore;
+
+class TFSConfigInterface : public Fwk::PtrInterface <TFSConfigInterface>
+{
+public:
+    typedef Fwk::Ptr <TFSConfigInterface const> PtrConst;
+    typedef Fwk::Ptr <TFSConfigInterface> Ptr;
+
+    //hack
+    static const U64 TFSBlockSize_ = (1024 * 1024);
+
+    //accessors
+    U64 blockSizeShift() const              { return blockSizeShift_; }
+    U64 blockSize() const                   { return blockSize_; }
+    U64 blockOffsetMask() const             { return blockOffsetMask_; }
+    U64 blockSizeMask() const               { return blockSizeMask_; }
+
+    //ResourceLocation cacheLocation() const  { return cacheLocation_; }
+
+    //mutators
+    void blockSizeShiftIs(U64 shift);
+    //void cacheLocationIs(ResourceLocation location);
+
+    void localFileSystemBlockStoreNew(string name, string blockStoreRoot, char pathDelimiter);
+
+    //creators
+
+
+    static TFSConfigInterface::Ptr TFSConfigInterfaceNew(Fwk::Ptr <TFSCore> core) { return new TFSConfigInterface(core); }
+
+protected:
+    U64 blockSizeShift_; //20
+    U64 blockSize_;//0x100000 (1MB)
+    U64 blockOffsetMask_; //0xFFFFF;
+    U64 blockSizeMask_;
+
+    //ResourceLocation cacheLocation_;
+
+    Fwk::Ptr <TFSCore> core_;
+
+    TFSConfigInterface(Fwk::Ptr <TFSCore> core) : core_(core) {}
+
+}; //TFSConfigInterface
+
+class TFSStatusInterface : public Fwk::PtrInterface <TFSStatusInterface>
+{
+public:
+    typedef Fwk::Ptr <TFSStatusInterface const> PtrConst;
+    typedef Fwk::Ptr <TFSStatusInterface> Ptr;
+
+    static TFSStatusInterface::Ptr TFSStatusInterfaceNew(Fwk::Ptr <TFSCore> core) { return new TFSStatusInterface(core); }
+
+protected:
+    Fwk::Ptr <TFSCore> core_;
+
+    TFSStatusInterface(Fwk::Ptr <TFSCore> core) : core_(core) {}
+
+}; //TFSStatusInterface
+
+
+
+class TFSIOInterface : public Fwk::PtrInterface <TFSIOInterface>
+{
+public:
+    typedef Fwk::Ptr <TFSIOInterface const> PtrConst;
+    typedef Fwk::Ptr <TFSIOInterface> Ptr;
+
+    //accessors
+    TFSDirectoryObject::Ptr directoryObject(ObjectPath path) const;
+    TFSRegularFileObject::Ptr regularFileObject(ObjectPath path) const;
+
+    TFSHandle::Ptr handle(HandleID hid) const;
+
+    //mutators
+    TFSHandle::Ptr handleNew(ObjectPath path, TFSObject::Ptr object, ProcessInfo process, OpenFlag openFlag);
+    void handleDel(HandleID hid);
+
+    TFSDirectoryObject::Ptr directoryObjectNew(ObjectPath path, ObjectPermission permission);
+    TFSRegularFileObject::Ptr regularFileObjectNew(ObjectPath path, ObjectPermission permission);
+    
+    void rootDirectoryObjectAdd(ObjectPath path, TFSDirectoryObject::Ptr object);
+    void directoryObjectAdd(ObjectPath path, TFSDirectoryObject::Ptr object);
+    void regularFileObjectAdd(ObjectPath path, TFSRegularFileObject::Ptr object);
+
+    void directoryObjectDel(ObjectPath path);
+    void regularFileObjectDel(ObjectPath path);
+
+    U64 readNew(HandleID hid, U8 *dstBuffer, U64 offset, U64 length);
+    U64 writeNew(HandleID hid, U8 *srcBuffer, U64 offset, U64 length);
+
+    //creators
+    static TFSIOInterface::Ptr TFSIOInterfaceNew(Fwk::Ptr <TFSCore> core);
+
+protected:
+    Fwk::Ptr <TFSCore> core_;
+    map<HandleID, TFSHandle::Ptr, HandleIDComp> handleLookupCache_;
+
+    TFSIOInterface(Fwk::Ptr <TFSCore> core) : core_(core) {}
+
+}; //TFSIOInterface
+
+
+
+} //namespace
+#endif

@@ -1,0 +1,1733 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561
+END
+winpipes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/winpipes.cpp
+END
+safer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/safer.cpp
+END
+adler32.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/adler32.h
+END
+mars.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/mars.cpp
+END
+dsa.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/dsa.cpp
+END
+mqv.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/mqv.h
+END
+filters.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/filters.cpp
+END
+dmac.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/dmac.h
+END
+dlltest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/dlltest.cpp
+END
+dessp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/dessp.cpp
+END
+gost.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/gost.h
+END
+seal.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/seal.cpp
+END
+oaep.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/oaep.cpp
+END
+twofish.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/twofish.h
+END
+algparam.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/algparam.h
+END
+simple.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/simple.h
+END
+network.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/network.h
+END
+oids.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/oids.h
+END
+mqv.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/mqv.cpp
+END
+zlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/zlib.h
+END
+mars.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/mars.h
+END
+datatest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/datatest.cpp
+END
+sosemanuk.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/sosemanuk.h
+END
+bfinit.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/bfinit.cpp
+END
+modes.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/modes.h
+END
+camellia.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/camellia.h
+END
+bench.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/bench.cpp
+END
+des.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/des.h
+END
+twofish.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/twofish.cpp
+END
+vmac.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/vmac.cpp
+END
+authenc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/authenc.cpp
+END
+luc.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/luc.h
+END
+wake.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/wake.h
+END
+cryptdll.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cryptdll.dsp
+END
+elgamal.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/elgamal.cpp
+END
+strciphr.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/strciphr.h
+END
+polynomi.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/polynomi.cpp
+END
+gcm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/gcm.cpp
+END
+validat2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/validat2.cpp
+END
+ecp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/ecp.cpp
+END
+mdc.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/mdc.h
+END
+des.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/des.cpp
+END
+iterhash.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/iterhash.h
+END
+cbcmac.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cbcmac.h
+END
+blowfish.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/blowfish.cpp
+END
+xtr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/xtr.cpp
+END
+cryptdll.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cryptdll.vcproj
+END
+test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/test.cpp
+END
+sha.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/sha.h
+END
+serpent.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/serpent.cpp
+END
+lubyrack.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/lubyrack.h
+END
+asn.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/asn.cpp
+END
+randpool.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/randpool.h
+END
+luc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/luc.cpp
+END
+queue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/queue.cpp
+END
+modexppc.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/modexppc.h
+END
+marss.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/marss.cpp
+END
+blumshub.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/blumshub.h
+END
+pssr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/pssr.cpp
+END
+cryptest.sln
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cryptest.sln
+END
+rc5.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/rc5.cpp
+END
+md4.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/md4.h
+END
+pkcspad.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/pkcspad.h
+END
+cast.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cast.cpp
+END
+fips140.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/fips140.h
+END
+cpu.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cpu.h
+END
+adler32.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/adler32.cpp
+END
+ida.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/ida.cpp
+END
+validate.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/validate.h
+END
+rabin.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/rabin.h
+END
+words.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/words.h
+END
+elgamal.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/elgamal.h
+END
+gzip.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/gzip.cpp
+END
+hrtimer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/hrtimer.cpp
+END
+sha.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/sha.cpp
+END
+x64dll.asm
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/x64dll.asm
+END
+emsa2.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/emsa2.h
+END
+gost.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/gost.cpp
+END
+eax.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/eax.h
+END
+algparam.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/algparam.cpp
+END
+rng.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/rng.cpp
+END
+base64.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/base64.h
+END
+nbtheory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/nbtheory.cpp
+END
+rabin.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/rabin.cpp
+END
+panama.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/panama.cpp
+END
+cast.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cast.h
+END
+misc.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/misc.h
+END
+fipstest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/fipstest.cpp
+END
+stdcpp.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/stdcpp.h
+END
+integer.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/integer.h
+END
+zdeflate.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/zdeflate.h
+END
+skipjack.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/skipjack.h
+END
+pch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/pch.cpp
+END
+whrlpool.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/whrlpool.h
+END
+crc.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/crc.h
+END
+hmac.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/hmac.h
+END
+hrtimer.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/hrtimer.h
+END
+seed.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/seed.cpp
+END
+sharkbox.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/sharkbox.cpp
+END
+rsa.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/rsa.cpp
+END
+md5.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/md5.h
+END
+misc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/misc.cpp
+END
+ec2n.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/ec2n.h
+END
+pwdbased.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/pwdbased.h
+END
+fltrimpl.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/fltrimpl.h
+END
+pubkey.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/pubkey.cpp
+END
+nbtheory.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/nbtheory.h
+END
+dh.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/dh.h
+END
+gfpcrypt.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/gfpcrypt.h
+END
+tftables.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/tftables.cpp
+END
+safer.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/safer.h
+END
+salsa.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/salsa.h
+END
+esign.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/esign.h
+END
+regtest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/regtest.cpp
+END
+aes.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/aes.h
+END
+filters.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/filters.h
+END
+pch.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/pch.h
+END
+dlltest.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/dlltest.dsp
+END
+md4.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/md4.cpp
+END
+asn.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/asn.h
+END
+seckey.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/seckey.h
+END
+cryptlib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cryptlib.cpp
+END
+eccrypto.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/eccrypto.cpp
+END
+default.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/default.h
+END
+gf256.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/gf256.cpp
+END
+dh.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/dh.cpp
+END
+rc5.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/rc5.h
+END
+xtrcrypt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/xtrcrypt.cpp
+END
+tigertab.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/tigertab.cpp
+END
+salsa.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/salsa.cpp
+END
+sosemanuk.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/sosemanuk.cpp
+END
+validat3.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/validat3.cpp
+END
+tiger.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/tiger.cpp
+END
+modarith.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/modarith.h
+END
+gzip.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/gzip.h
+END
+dh2.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/dh2.h
+END
+base32.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/base32.h
+END
+base64.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/base64.cpp
+END
+rc2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/rc2.cpp
+END
+cryptest_bds.bdsproj
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cryptest_bds.bdsproj
+END
+rc6.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/rc6.cpp
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/Readme.txt
+END
+channels.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/channels.h
+END
+ttmac.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/ttmac.cpp
+END
+trdlocal.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/trdlocal.h
+END
+eprecomp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/eprecomp.cpp
+END
+dsa.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/dsa.h
+END
+tiger.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/tiger.h
+END
+License.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/License.txt
+END
+adhoc.cpp.proto
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/adhoc.cpp.proto
+END
+gf2_32.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/gf2_32.cpp
+END
+nr.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/nr.h
+END
+serpent.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/serpent.h
+END
+pkcspad.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/pkcspad.cpp
+END
+osrng.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/osrng.cpp
+END
+secblock.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/secblock.h
+END
+channels.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/channels.cpp
+END
+rc6.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/rc6.h
+END
+algebra.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/algebra.h
+END
+files.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/files.cpp
+END
+shark.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/shark.cpp
+END
+eax.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/eax.cpp
+END
+eprecomp.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/eprecomp.h
+END
+ripemd.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/ripemd.cpp
+END
+dll.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/dll.h
+END
+smartptr.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/smartptr.h
+END
+shacal2.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/shacal2.h
+END
+bench.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/bench.h
+END
+default.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/default.cpp
+END
+gf2_32.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/gf2_32.h
+END
+rw.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/rw.cpp
+END
+arc4.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/arc4.cpp
+END
+authenc.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/authenc.h
+END
+integer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/integer.cpp
+END
+x64masm.asm
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/x64masm.asm
+END
+strciphr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/strciphr.cpp
+END
+gf256.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/gf256.h
+END
+argnames.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/argnames.h
+END
+winpipes.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/winpipes.h
+END
+GNUmakefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/GNUmakefile
+END
+files.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/files.h
+END
+cryptest_bds.bdsgroup
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cryptest_bds.bdsgroup
+END
+dll.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/dll.cpp
+END
+ecp.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/ecp.h
+END
+randpool.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/randpool.cpp
+END
+socketft.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/socketft.cpp
+END
+seed.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/seed.h
+END
+md5.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/md5.cpp
+END
+fips140.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/fips140.cpp
+END
+pssr.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/pssr.h
+END
+square.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/square.cpp
+END
+ccm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/ccm.cpp
+END
+trdlocal.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/trdlocal.cpp
+END
+esign.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/esign.cpp
+END
+modes.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/modes.cpp
+END
+camellia.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/camellia.cpp
+END
+tea.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/tea.cpp
+END
+wait.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/wait.h
+END
+basecode.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/basecode.h
+END
+socketft.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/socketft.h
+END
+wake.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/wake.cpp
+END
+rijndael.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/rijndael.cpp
+END
+vmac.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/vmac.h
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/resource.h
+END
+cryptlib.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cryptlib.dsp
+END
+cryptlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cryptlib.h
+END
+eccrypto.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/eccrypto.h
+END
+zdeflate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/zdeflate.cpp
+END
+rdtables.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/rdtables.cpp
+END
+mqueue.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/mqueue.cpp
+END
+bench2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/bench2.cpp
+END
+gf2n.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/gf2n.h
+END
+whrlpool.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/whrlpool.cpp
+END
+iterhash.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/iterhash.cpp
+END
+ccm.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/ccm.h
+END
+cmac.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cmac.h
+END
+polynomi.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/polynomi.h
+END
+gcm.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/gcm.h
+END
+factory.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/factory.h
+END
+dh2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/dh2.cpp
+END
+cryptlib_bds.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cryptlib_bds.cpp
+END
+cryptest.dsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cryptest.dsp
+END
+zinflate.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/zinflate.h
+END
+cpu.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cpu.cpp
+END
+cryptest.dsw
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cryptest.dsw
+END
+hex.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/hex.h
+END
+cryptest.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cryptest.vcproj
+END
+arc4.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/arc4.h
+END
+gfpcrypt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/gfpcrypt.cpp
+END
+zlib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/zlib.cpp
+END
+idea.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/idea.cpp
+END
+Doxyfile
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/Doxyfile
+END
+cmac.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cmac.cpp
+END
+pubkey.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/pubkey.h
+END
+serpentp.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/serpentp.h
+END
+emsa2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/emsa2.cpp
+END
+cryptlib.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cryptlib.vcproj
+END
+fipsalgt.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/fipsalgt.cpp
+END
+config.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/config.h
+END
+ttmac.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/ttmac.h
+END
+rng.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/rng.h
+END
+osrng.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/osrng.h
+END
+algebra.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/algebra.cpp
+END
+skipjack.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/skipjack.cpp
+END
+cryptopp.rc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cryptopp.rc
+END
+wait.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/wait.cpp
+END
+xtrcrypt.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/xtrcrypt.h
+END
+idea.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/idea.h
+END
+crc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/crc.cpp
+END
+cbcmac.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cbcmac.cpp
+END
+shark.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/shark.h
+END
+shacal2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/shacal2.cpp
+END
+casts.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/casts.cpp
+END
+tea.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/tea.h
+END
+md2.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/md2.cpp
+END
+blowfish.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/blowfish.h
+END
+xtr.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/xtr.h
+END
+ripemd.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/ripemd.h
+END
+ec2n.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/ec2n.cpp
+END
+simple.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/simple.cpp
+END
+seal.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/seal.h
+END
+oaep.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/oaep.h
+END
+network.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/network.cpp
+END
+cryptest_bds.bpf
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cryptest_bds.bpf
+END
+gf2n.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/gf2n.cpp
+END
+rw.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/rw.h
+END
+cryptlib_bds.bdsproj
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/cryptlib_bds.bdsproj
+END
+trunhash.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/trunhash.h
+END
+ida.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/ida.h
+END
+validat1.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/validat1.cpp
+END
+mqueue.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/mqueue.h
+END
+zinflate.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/zinflate.cpp
+END
+hex.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/hex.cpp
+END
+squaretb.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/squaretb.cpp
+END
+md2.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/md2.h
+END
+3way.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/3way.h
+END
+panama.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/panama.h
+END
+square.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/square.h
+END
+basecode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/basecode.cpp
+END
+hmac.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/hmac.cpp
+END
+base32.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/base32.cpp
+END
+blumshub.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/blumshub.cpp
+END
+3way.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/3way.cpp
+END
+queue.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/queue.h
+END
+rsa.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/rsa.h
+END
+rc2.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/rc2.h
+END
+dlltest.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/dlltest.vcproj
+END
+rijndael.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/rijndael.h
+END

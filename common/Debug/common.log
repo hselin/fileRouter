@@ -1,0 +1,25 @@
+﻿Build started 1/21/2012 3:26:35 PM.
+     1>Project "C:\projects\fileRouter\common\common.vcxproj" on node 3 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\common.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Debug\common.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Log.cpp Util.cpp
+         Util.cpp
+     1>c:\projects\filerouter\common\util.cpp(96): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+         Log.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\projects\fileRouter\Debug\common.lib" /NOLOGO Debug\Log.obj
+         Debug\Util.obj
+         common.vcxproj -> C:\projects\fileRouter\Debug\common.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\common.unsuccessfulbuild".
+         Touching "Debug\common.lastbuildstate".
+     1>Done Building Project "C:\projects\fileRouter\common\common.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.95

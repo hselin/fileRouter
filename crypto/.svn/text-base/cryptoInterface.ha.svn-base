@@ -1,0 +1,8 @@
+#pragma once
+#ifndef CRYPTO_INTERFACE_H
+#define CRYPTO_INTERFACE_H
+
+
+//void hash(uint8_t *hashBuffer, uint32_t hashBufferSize, uint_8_t *dataBuffer, uint32_t dataBufferSize);
+
+#endif

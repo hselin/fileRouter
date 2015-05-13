@@ -1,0 +1,77 @@
+#include <string>
+#include <errno.h>
+
+//#include <unistd.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+
+#include "TFSValueTypes.h"
+#include "TFSCore.h"
+
+#include "TFSBlockStore.h"
+
+namespace TFS
+{
+
+using namespace std;
+
+/*
+  ==========================================================
+  Implementation for TFSBlockStore
+  ==========================================================
+*/
+
+BlockOperationStatus TFSBlockStore::block(BlockID bid, U8 **buffer)
+{
+    BlockOperationStatus status;
+
+    core_->log()->entryNew(Fwk::Log::info(), "TFSBlockStore::block %s", bid.hexString().c_str());
+
+    return status;
+}
+
+BlockOperationStatus TFSBlockStore::blockNew(BlockID bid, U8 *buffer)
+{
+    BlockOperationStatus status;
+
+    core_->log()->entryNew(Fwk::Log::info(), "TFSBlockStore::blockNew %s", bid.hexString().c_str());
+
+    return status;
+}
+
+/*
+  ==========================================================
+  Implementation for TFSLocalFileSystemBlockStore
+  ==========================================================
+*/
+
+BlockOperationStatus TFSLocalFileSystemBlockStore::block(BlockID bid, U8 **buffer)
+{
+    BlockOperationStatus status;
+
+    core_->log()->entryNew(Fwk::Log::info(), "TFSLocalFileSystemBlockStore::block %s", bid.hexString().c_str());
+
+    return status;
+}
+
+BlockOperationStatus TFSLocalFileSystemBlockStore::blockNew(BlockID bid, U8 *buffer)
+{
+    BlockOperationStatus status;
+
+    core_->log()->entryNew(Fwk::Log::info(), "TFSLocalFileSystemBlockStore::blockNew %s", bid.hexString().c_str());
+
+    Fwk::createDirPath(
+    
+
+
+    return status;
+}
+
+
+TFSLocalFileSystemBlockStore::Ptr TFSLocalFileSystemBlockStore::TFSLocalFileSystemBlockStoreNew(string name, LocalFileSystemPath blockStoreRoot, char pathDelimiter, TFSCore::Ptr core)
+{
+    return new TFSLocalFileSystemBlockStore(name, blockStoreRoot, pathDelimiter, core);
+}
+
+} //namespace
+    

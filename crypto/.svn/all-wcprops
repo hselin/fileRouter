@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/kinematic/!svn/ver/23/trunk/crypto
+END
+CryptoInterface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/kinematic/!svn/ver/67/trunk/crypto/CryptoInterface.cpp
+END
+CryptoInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/kinematic/!svn/ver/67/trunk/crypto/CryptoInterface.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/kinematic/!svn/ver/62/trunk/crypto/Makefile
+END

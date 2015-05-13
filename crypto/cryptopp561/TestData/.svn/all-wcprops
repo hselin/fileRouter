@@ -1,0 +1,335 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData
+END
+twofishv.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/twofishv.dat
+END
+lucs1024.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/lucs1024.dat
+END
+cast256v.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/cast256v.dat
+END
+dsa1024.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/dsa1024.dat
+END
+rsa512a.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/rsa512a.dat
+END
+lucd512.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/lucd512.dat
+END
+gostval.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/gostval.dat
+END
+dsa1024b.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/dsa1024b.dat
+END
+mqv2048.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/mqv2048.dat
+END
+elgc1024.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/elgc1024.dat
+END
+xtrdh342.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/xtrdh342.dat
+END
+rabi1024.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/rabi1024.dat
+END
+nr1024.dat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/nr1024.dat
+END
+luc1024.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/luc1024.dat
+END
+dlie2048.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/dlie2048.dat
+END
+rsa400pb.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/rsa400pb.dat
+END
+rc5val.dat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/rc5val.dat
+END
+rsa1024.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/rsa1024.dat
+END
+esig1023.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/esig1023.dat
+END
+dsa512.dat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/dsa512.dat
+END
+rw1024.dat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/rw1024.dat
+END
+saferval.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/saferval.dat
+END
+usage.dat
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/usage.dat
+END
+marsval.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/marsval.dat
+END
+ideaval.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/ideaval.dat
+END
+camellia.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/camellia.dat
+END
+dh2048.dat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/dh2048.dat
+END
+mqv1024.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/mqv1024.dat
+END
+cast128v.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/cast128v.dat
+END
+sharkval.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/sharkval.dat
+END
+lucc512.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/lucc512.dat
+END
+rsa400pv.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/rsa400pv.dat
+END
+xtrdh171.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/xtrdh171.dat
+END
+dlie1024.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/dlie1024.dat
+END
+3wayval.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/3wayval.dat
+END
+squareva.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/squareva.dat
+END
+rijndael.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/rijndael.dat
+END
+descert.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/descert.dat
+END
+rc2val.dat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/rc2val.dat
+END
+rabi2048.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/rabi2048.dat
+END
+lucc1024.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/lucc1024.dat
+END
+nr2048.dat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/nr2048.dat
+END
+rc6val.dat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/rc6val.dat
+END
+lucs512.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/lucs512.dat
+END
+lucd1024.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/lucd1024.dat
+END
+skipjack.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/skipjack.dat
+END
+luc2048.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/luc2048.dat
+END
+3desval.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/3desval.dat
+END
+dh1024.dat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/dh1024.dat
+END
+esig2046.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/esig2046.dat
+END
+rsa2048.dat
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/rsa2048.dat
+END
+shacal2v.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/shacal2v.dat
+END
+esig1536.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/esig1536.dat
+END
+rw2048.dat
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/rw2048.dat
+END
+serpentv.dat
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/kinematic/!svn/ver/67/trunk/crypto/cryptopp561/TestData/serpentv.dat
+END

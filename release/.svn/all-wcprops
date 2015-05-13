@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/kinematic/!svn/ver/42/trunk/release
+END
+todo.txt
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/kinematic/!svn/ver/61/trunk/release/todo.txt
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/kinematic/!svn/ver/49/trunk/release/main.cpp
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/kinematic/!svn/ver/67/trunk/release/Makefile
+END
+run.sh
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/kinematic/!svn/ver/50/trunk/release/run.sh
+END
+stop.sh
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/kinematic/!svn/ver/50/trunk/release/stop.sh
+END

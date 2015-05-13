@@ -1,0 +1,20 @@
+﻿Build started 1/21/2012 3:26:36 PM.
+     1>Project "C:\projects\fileRouter\crypto\crypto.vcxproj" on node 3 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "Debug\crypto.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "Debug\crypto.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt cryptoInterface.c
+         cryptoInterface.c
+       Lib:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\projects\fileRouter\Debug\crypto.lib" /NOLOGO Debug\cryptoInterface.obj
+         crypto.vcxproj -> C:\projects\fileRouter\Debug\crypto.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\crypto.unsuccessfulbuild".
+         Touching "Debug\crypto.lastbuildstate".
+     1>Done Building Project "C:\projects\fileRouter\crypto\crypto.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.45
